@@ -1,0 +1,116 @@
+// example from RUSVINIL
+
+@import 'src/asserts/scss/helpers/helpers';
+@import 'src/asserts/scss/colors';
+@import 'src/asserts/scss/global-containers';
+
+html {
+  font-family: 'SFPROText', sans-serif;
+  font-size: 14px;
+  color: $color-black;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+a {
+  display: block;
+  color: $color-light-blue;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+
+  &:hover {
+    color: $color-blue;
+    cursor: pointer;
+  }
+}
+
+button, input, select {
+  font-family: inherit;
+}
+
+.display-none {
+  display: none;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.text-header-logo {
+  @include header-logo;
+}
+
+.text-title {
+  @include text-title;
+}
+
+.text-subtitle {
+  @include text-subtitle;
+}
+
+.text-error {
+  @include text-error;
+}
+
+.text-button {
+  @include text-button;
+}
+
+.text-breadcrumbs {
+  @include text-breadcrumbs;
+}
+
+.text-separator {
+  @include text-separator;
+}
+
+.text-input {
+  @include text-input;
+}
+
+.text-input-label {
+  @include text-input-label;
+}
+
+.text-cards {
+  @include text-cards;
+}
+
+.text-cards-subheader {
+  @include text-cards-subheader;
+}
+
+.text-cards-description-gray {
+  @include text-cards-description-gray;
+}
+
+.text-email {
+  @include text-email;
+}

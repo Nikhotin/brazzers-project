@@ -1,0 +1,15 @@
+@import '../../../asserts/scss/colors';
+@import '../../../asserts/scss/helpers/helpers';
+
+.screen {
+  position: relative;
+  width: $fullscreen-width;
+  height: $fullscreen-height;
+  background: $color-bg;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  overflow-x: hidden;
+}

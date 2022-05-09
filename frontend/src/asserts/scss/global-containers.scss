@@ -1,0 +1,25 @@
+.a-center {
+  align-items: center;
+}
+
+@mixin form-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin form-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin form-flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin icon-section {
+  display: flex;
+  justify-content: space-between;
+}

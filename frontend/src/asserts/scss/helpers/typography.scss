@@ -1,0 +1,71 @@
+@import '../colors.scss';
+
+@mixin header-logo {
+  font-size: 18px;
+  color: $color-white;
+}
+
+@mixin text-title {
+  font-family: 'SFPRODisplay-Bold';
+  font-size: 24px;
+}
+
+@mixin text-subtitle {
+  font-weight: bold;
+}
+
+@mixin text-input {
+  font-size: 15px;
+}
+
+@mixin text-error {
+  color: $color-red;
+  font-size: 13px;
+}
+
+@mixin text-button {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+@mixin text-breadcrumbs {
+  opacity: 0.4;
+}
+
+@mixin text-separator {
+  font-size: 12px;
+  color: $color-separator-text;
+}
+
+@mixin text-input-label {
+  color: $color-gray;
+}
+
+@mixin text-cards {
+  font-size: 18px;
+}
+
+@mixin text-cards-subheader {
+  font-family: 'SFPRODisplay-Bold';
+  font-size: 20px;
+}
+
+@mixin text-cards-description-gray {
+  font-size: 16px;
+  color: $color-separator-text;
+}
+
+@mixin counter-value {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+@mixin text-studycard-title {
+  font-family: 'SFPRODisplay-Bold';
+  font-size: 36px;
+}
+
+@mixin text-email {
+  font-size: 18px;
+  font-family: 'SFPRODisplay-Bold';
+}
