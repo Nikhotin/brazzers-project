@@ -1,15 +1,15 @@
 import MainLayout from "./views/layouts/main/MainLayout";
-import {Route, Switch, withRouter} from "react-router";
-import signIn from './views/pages/signIn/signIn';
+import { Route, Routes } from "react-router-dom";
+import SignInPage from './views/pages/signIn/SignInPage.js';
 
 function App() {
   return (
     <MainLayout>
-      <Switch>
-        <Route path="/sign-in" component={signIn} />
-      </Switch>
+      <Routes>
+        <Route path="/sign-in" element={<SignInPage />} />
+      </Routes>
     </MainLayout>
   );
 }
 
-export default withRouter(App);
+export default App;

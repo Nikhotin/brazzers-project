@@ -3,9 +3,12 @@ import SignInSignUp from "../../../components/SignInSignUp/SignInSignUp";
 
 function SignInPage(props) {
   return (
-    <div>
-      <SignInSignUp textBtn={'text'} onSubmit={() => console.log('yes')} />
-    </div>
+      <SignInSignUp
+        btnText={'Войти'}
+        onSign={(login, password) => {
+          console.log(login, password)
+        }}
+      />
   );
 }
 
