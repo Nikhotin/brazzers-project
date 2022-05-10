@@ -1,0 +1,36 @@
+.signForm {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+}
+
+.signUpLink {
+  color: #3a3a3a;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.NavLink {
+
+}
+
+.input{
+  padding: 10px 10px 10px 5px;
+  border: 0px;
+  border-radius: 5px;
+  outline: none;
+  font-style: italic;
+
+  &:focus {
+    border: 1px gray solid;
+  }
+}
+.signInForm{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}

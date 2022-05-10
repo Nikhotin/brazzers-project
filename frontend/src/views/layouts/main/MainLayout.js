@@ -10,8 +10,8 @@ function MainLayout({
     popupIsOpen,
   }) {
   return (
-    <main className={styles.screen}>
-      <div className={cx('container', 'px-140', 'pb-40')}>
+    <main>
+      <div className={styles.backImg}>
         {children}
       </div>
     </main>

@@ -13,3 +13,10 @@
   display: flex;
   overflow-x: hidden;
 }
+
+.backImg {
+  background-image: url('./mainback.jpg');
+  background-size: 3000px 2000px;
+  height: 100vh;
+  width: 100vw;
+}
