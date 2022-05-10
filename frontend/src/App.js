@@ -1,15 +1,39 @@
+import { useMemo } from 'react';
 import MainLayout from "./views/layouts/main/MainLayout";
-import { Route, Switch, withRouter } from 'react-router-dom';
-import signIn from 'views/pages/signIn/signIn';
+import { Route, Routes, Navigate, useLocation } from "react-router";
+import SignInPage from './views/pages/SignIn/SignInPage.js';
+import SignUpPage from './views/pages/SignUp/SignUpPage.js';
+import MainPage from './views/pages/Main/MainPage.js';
+import SignLayout from "./views/layouts/sign/SignLayout";
 
 function App() {
+  const location = useLocation();
+
+  const layout = useMemo(() => {
+    return location.pathname === "/sign-in" || location.pathname === "/sign-up" ? (
+      <SignLayout>
+        <Routes>
+          <Route path="/sign-in" element={<SignInPage />} />
+          <Route path="/sign-up" element={<SignUpPage />} />
+        </Routes>
+      </SignLayout>
+    ) : (
+      <MainLayout>
+        <Routes>
+          <Route
+            path="*"
+            element={<Navigate to="/sign-in" replace />}
+          />
+          <Route path="/main" element={<MainPage />} />
+        </Routes>
+      </MainLayout>
+    )}, [location])
+
   return (
-    <MainLayout>
-      <Switch>
-        <Route path="/sign-in" component={signIn} />
-      </Switch>
-    </MainLayout>
+    <>
+      {layout}
+    </>
   );
 }
 
-export default withRouter(App);
+export default App;

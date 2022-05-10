@@ -1,0 +1,20 @@
+.containerWithImg {
+  background-image: url("./backgr.jpg");
+  background-size: 3000px 2000px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.signIn {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(to bottom left, #96e5fd, white 70%);
+  border-radius: 5%;
+  border: 1px solid gray;
+}
