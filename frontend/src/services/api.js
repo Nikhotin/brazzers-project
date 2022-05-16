@@ -62,3 +62,43 @@ export const postFormData = async (route, data, token) => {
   });
   return res;
 };
+
+// IT'S FAKE API WHILE ROMA NE NAPISHET BACK
+export const dataBase = {
+  doctors: [
+    {
+      id: '1',
+      name: 'Иванов С.',
+      qualification: 'terapevt'
+    },
+    {
+      id: '2',
+      name: 'Сидоров А.',
+      qualification: 'terapevt'
+    },
+    {
+      id: '3',
+      name: 'Карпенко Ю.',
+      qualification: 'terapevt'
+    },
+    {
+      id: '4',
+      name: 'Серов Д.',
+      qualification: 'nevropatolog'
+    },
+    {
+      id: '5',
+      name: 'Тимаков С.',
+      qualification: 'nevropatolog'
+    }
+  ],
+  me: {
+    name: 'Ruslan'
+  }
+}
+
+export async function fakeApiMethod(property) {
+  return await new Promise(res => setTimeout(() => {
+    res(dataBase[property])
+  }, 1500));
+}

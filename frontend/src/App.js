@@ -4,6 +4,9 @@ import { Route, Routes, Navigate, useLocation } from "react-router";
 import SignInPage from './views/pages/SignIn/SignInPage.js';
 import SignUpPage from './views/pages/SignUp/SignUpPage.js';
 import MainPage from './views/pages/Main/MainPage.js';
+import AppointmentsPage from './views/pages/Appointments/AppointmentsPage.js';
+import DoctorsPage from "./views/pages/Doctors/DoctorsPage";
+import UserInfoPage from "./views/pages/Doctors/DoctorsPage";
 import SignLayout from "./views/layouts/sign/SignLayout";
 
 function App() {
@@ -25,6 +28,9 @@ function App() {
             element={<Navigate to="/sign-in" replace />}
           />
           <Route path="/main" element={<MainPage />} />
+          <Route path="/appointments" element={<AppointmentsPage />} />
+          <Route path="/doctors" element={<DoctorsPage />} />
+          <Route path="/userinfo" element={<UserInfoPage />} />
         </Routes>
       </MainLayout>
     )}, [location])

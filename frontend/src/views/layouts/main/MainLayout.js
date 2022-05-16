@@ -1,18 +1,17 @@
 import React from 'react';
 import styles from './MainLayout.module.scss';
-import classNames from 'classnames/bind';
-const cx = classNames.bind(styles);
+import HeaderLayout from "../header/HeaderLayout";
 
 function MainLayout({
     children,
-    name,
-    isAuth,
-    popupIsOpen,
   }) {
   return (
     <main>
       <div className={styles.backImg}>
-        {children}
+        <HeaderLayout />
+        <div className={styles.appContainer}>
+          {children}
+        </div>
       </div>
     </main>
   );

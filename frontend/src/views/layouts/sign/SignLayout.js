@@ -3,9 +3,6 @@ import styles from './SignLayout.module.scss';
 
 function SignLayout({
     children,
-    name,
-    isAuth,
-    popupIsOpen,
   }) {
   return (
     <main className={styles.containerWithImg}>
