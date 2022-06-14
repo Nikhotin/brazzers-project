@@ -93,11 +93,21 @@ export const dataBase = {
     }
   ],
   me: {
-    name: 'Ruslan'
+    login: 'Ruslan',
+    password: 123
+  },
+  zapisi: {
+
   }
 }
 
 export async function fakeApiMethod(property) {
+  return await new Promise(res => setTimeout(() => {
+    res(dataBase[property])
+  }, 1500));
+}
+
+export async function fakeApiPost(property) {
   return await new Promise(res => setTimeout(() => {
     res(dataBase[property])
   }, 1500));
