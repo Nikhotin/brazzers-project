@@ -3,7 +3,7 @@ import styles from './SignInSignUp.module.scss';
 import { NavLink } from "react-router-dom";
 
 
-function SignInSignUp( {btnText, onSign, link = {} } ) {
+function SignInSignUp( {btnText, link, onSign = {} } ) {
   const [login, setLogin] = useState('');
   const [password, setPassword] = useState('');
 
@@ -15,7 +15,7 @@ function SignInSignUp( {btnText, onSign, link = {} } ) {
           onChange={(e) => setLogin(e.target.value)}
           placeholder={'Логин'}
         />
-        <input type="text"
+        <input type="password"
           className={styles.input}
           onChange={(e) => setPassword(e.target.value)}
           placeholder={'Пароль'}

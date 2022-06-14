@@ -1,14 +1,16 @@
-.dataSelect {
+.dateSelect {
   display: flex;
   flex-direction: column;
   height: 100px;
   width: 300px;
-  margin-top: 40px;
+  margin: 40px 0 32px;
   padding: 50px;
   justify-content: space-evenly;
   border: 1px solid darkgray;
 }
 
-.input {
-  cursor: pointer;
+.inputContainer {
+  display: flex;
+  justify-content: center;
+  transform: translateX(31px);
 }
